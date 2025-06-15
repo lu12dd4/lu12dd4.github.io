@@ -1,10 +1,17 @@
+
 :root {
-  --verde-oscuro: #1b4332;
-  --verde-claro: #95d5b2;
-  --verde-hoja: #40916c;
-  --blanco: #f1fef3;
+  --azul-oscuro: #0075b9;
+  --azul-claro: #3baee4;
+
+  --azul-oscuro2: #0a3650;
+  --azul-claro2: #11516e;
+
+  --verde-hoja: #00a199;
+  --otro-color: #007b80;
+  --blanco: hwb(192 82% 0%);
   --gris-suave: #d8f3dc;
   --sombra: 0 4px 12px rgba(0, 0, 0, 0.15);
+  
 }
 
 body {
@@ -16,7 +23,7 @@ body {
 }
 
 header {
-  background: linear-gradient(to right, var(--verde-oscuro), var(--verde-hoja));
+  background: linear-gradient(to right, var(--azul-oscuro), var(--verde-hoja));
   color: white;
   padding: 50px 20px;
   text-align: center;
@@ -103,8 +110,8 @@ table th {
 }
 
 button {
-  background-color: var(--verde-hoja);
-  color: white;
+  background-color: var(--azul-claro2);
+  color: rgb(255, 255, 255);
   padding: 12px 25px;
   border: none;
   border-radius: 8px;
@@ -112,11 +119,11 @@ button {
   cursor: pointer;
   margin-top: 15px;
   box-shadow: var(--sombra);
-  transition: background-color 0.3s ease;
+  transition: background-color 0.5s ease;
 }
 
 button:hover {
-  background-color: var(--verde-oscuro);
+  background-color: var(--azul-oscuro2);
 }
 
 .galeria {
@@ -138,7 +145,7 @@ button:hover {
 }
 
 footer {
-  background-color: var(--verde-oscuro);
+  background-color: var(--otro-color);
   color: white;
   text-align: center;
   padding: 20px;
@@ -157,7 +164,7 @@ body.dark-mode table {
   background-color: #2a2a2a;
 }
 body.dark-mode header, body.dark-mode footer {
-  background: #0c3c2c;
+  background: #0d3664;
 }
 #modoOscuroBtn {
   position: absolute;
